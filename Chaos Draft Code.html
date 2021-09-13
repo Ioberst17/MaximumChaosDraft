@@ -1,0 +1,579 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Chaos Draft</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color:seashell">
+
+    <div class="jumbotron text-center">
+        <!--<h1>My First Bootstrap Page</h1>
+        <p>Resize this responsive page to see the effect!</p>
+        <input id="nameinput" type="text" /><button onclick="pickFunction('player1')">Player 1</button><button>Player 2</button> -->
+    </div>
+    <div>
+        <table class="table table_bordered table-striped text-center">
+            <tbody>
+                <tr>
+                    <td><img src="alpha.png" style="background-color:gray" id="alpha" onclick="pickFunction('alpha')" /></td>
+                    <td><img src="beta.png" style="background-color:gray" id="beta" onclick="pickFunction('beta')" /></td>
+                    <td><img src="unlimited.png" style="background-color:gray" id="unlimited" onclick="pickFunction('unlimited')" /></td>
+                    <td><img src="arabiannights.png" style="background-color:gray" id="nights" onclick="pickFunction('nights')" /></td>
+                    <td><img src="antiquities.png" style="background-color:gray" id="antiquities" onclick="pickFunction('antiquities')" /></td>
+                    <td><img src="legends.png" style="background-color:gray" id="legends" onclick="pickFunction('legends')" /></td>
+                </tr>
+                <tr>
+                    <td><img src="revised.png" style="background-color:gray" id="revised" onclick="pickFunction('revised')" /></td>
+                    <td><img src="thedark.png" style="background-color:gray" id="thedark" onclick="pickFunction('thedark')" /></td>
+                    <td><img src="fallenempires.png" style="background-color:gray" id="fallenempires" onclick="pickFunction('fallenempires')" /></td>
+                    <td><img src="fourth.png" style="background-color:gray" id="fourth" onclick="pickFunction('fourth')" /></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <h4 class="text-center">Ice Age Block</h4>
+                    <table class="table table_bordered table-striped text-center">
+                        <tbody>
+                            <tr>
+                                <td><img src="iceage.png" style="background-color:gray" id="iceage" onclick="pickFunction('iceage')" /></td>
+                                <td><img src="alliances.png" style="background-color:gray" id="alliances" onclick="pickFunction('alliances')" /></td>
+                                <td><img src="coldsnap.png" style="background-color:gray" id="coldsnap" onclick="pickFunction('coldsnap')" /></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table_bordered table-striped text-center">
+                        <tbody>
+                            <tr>
+                                <td><img src="homelands.png" style="background-color:gray" id="homelands" onclick="pickFunction('homelands')" /></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col">
+                    <h4 class="text-center">Mirage Block</h4>
+                    <table class="table table_bordered table-striped text-center">
+                        <tbody>
+                            <tr>
+                                <td><img src="mirage.png" style="background-color:gray" id="mirage" onclick="pickFunction('mirage')" /></td>
+                                <td><img src="visions.png" style="background-color:gray" id="visions" onclick="pickFunction('visions')" /></td>
+                                <td><img src="weatherlight.png" style="background-color:gray" id="weatherlight" onclick="pickFunction('weatherlight')" /></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table_bordered table-striped text-center">
+                        <tbody>
+                            <tr>
+                                <td><img src="fifth.png" style="background-color:gray" id="fifth" onclick="pickFunction('fifth')" /></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <h4 class="text-center">Tempest Block</h4>
+                    <table class="table table_bordered table-striped text-center">
+                        <tbody>
+                            <tr>
+                                <td><img src="tempest.png" style="background-color:gray" id="tempest" onclick="pickFunction('tempest')" /></td>
+                                <td><img src="stronghold.png" style="background-color:gray" id="stronghold" onclick="pickFunction('stronghold')" /></td>
+                                <td><img src="exodus.png" style="background-color:gray" id="exodus" onclick="pickFunction('exodus')" /></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col">
+                    <h4 class="text-center">Urza Block</h4>
+                    <table class="table table_bordered table-striped text-center">
+                        <tbody>
+                            <tr>
+                                <td><img src="urzassaga.png" style="background-color:gray" id="urzassaga" onclick="pickFunction('urzassaga')" /></td>
+                                <td><img src="urzaslegacy.png" style="background-color:gray" id="urzaslegacy" onclick="pickFunction('urzaslegacy')" /></td>
+                                <td><img src="urzasdestiny.png" style="background-color:gray" id="urzasdestiny" onclick="pickFunction('urzasdestiny')" /></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <table class="table table_bordered table-striped text-center">
+            <tbody>
+                <tr>
+                    <td><img src="sixth.png" style="background-color:gray" id="sixth" onclick="pickFunction('sixth')" /></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <h4 class="text-center">Masques Block</h4>
+                    <table class="table table_bordered table-striped text-center">
+                        <tbody>
+                            <tr>
+                                <td><img src="masques.png" style="background-color:gray" id="masques" onclick="pickFunction('masques')" /></td>
+                                <td><img src="nemesis.png" style="background-color:gray" id="nemesis" onclick="pickFunction('nemesis')" /></td>
+                                <td><img src="prophecy.png" style="background-color:gray" id="prophecy" onclick="pickFunction('prophecy')" /></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col">
+                    <h4 class="text-center">Invasion Block</h4>
+                    <table class="table table_bordered table-striped text-center">
+                        <tbody>
+                            <tr>
+                                <td><img src="invasion.png" style="background-color:gray" id="invasion" onclick="pickFunction('invasion')" /></td>
+                                <td><img src="planeshift.png" style="background-color:gray" id="planeshift" onclick="pickFunction('planeshift')" /></td>
+                                <td><img src="apocalypse.png" style="background-color:gray" id="apocalypse" onclick="pickFunction('apocalypse')" /></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <table class="table table_bordered table-striped text-center">
+            <tbody>
+                <tr>
+                    <td><img src="seventh.png" style="background-color:gray" id="seventh" onclick="pickFunction('seventh')" /></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <h4 class="text-center">Odyssey Block</h4>
+                    <table class="table table_bordered table-striped text-center">
+                        <tbody>
+                            <tr>
+                                <td><img src="odyssey.png" style="background-color:gray" id="odyssey" onclick="pickFunction('odyssey')" /></td>
+                                <td><img src="torment.png" style="background-color:gray" id="torment" onclick="pickFunction('torment')" /></td>
+                                <td><img src="judgment.png" style="background-color:gray" id="judgment" onclick="pickFunction('judgment')" /></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col">
+                    <h4 class="text-center">Onslaught Block</h4>
+                    <table class="table table_bordered table-striped text-center">
+                        <tbody>
+                            <tr>
+                                <td><img src="onslaught.png" style="background-color:gray" id="onslaught" onclick="pickFunction('onslaught')" /></td>
+                                <td><img src="legions.png" style="background-color:gray" id="legions" onclick="pickFunction('legions')" /></td>
+                                <td><img src="scourge.png" style="background-color:gray" id="scourge" onclick="pickFunction('scourge')" /></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <table class="table table_bordered table-striped text-center">
+            <tbody>
+                <tr>
+                    <td><img src="eighth.png" style="background-color:gray" id="eighth" onclick="pickFunction('eighth')" /></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <h4 class="text-center">Mirrodin Block</h4>
+                    <table class="table table_bordered table-striped text-center">
+                        <tbody>
+                            <tr>
+                                <td><img src="mirrodin.png" style="background-color:gray" id="mirrodin" onclick="pickFunction('mirrodin')" /></td>
+                                <td><img src="darksteel.png" style="background-color:gray" id="darksteel" onclick="pickFunction('darksteel')" /></td>
+                                <td><img src="fifthdawn.png" style="background-color:gray" id="fifthdawn" onclick="pickFunction('fifthdawn')" /></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col">
+                    <h4 class="text-center">Kamigawa Block</h4>
+                    <table class="table table_bordered table-striped text-center">
+                        <tbody>
+                            <tr>
+                                <td><img src="championsofkamigawa.png" style="background-color:gray" id="champions" onclick="pickFunction('champions')" /></td>
+                                <td><img src="betrayersofkamigawa.png" style="background-color:gray" id="betrayers" onclick="pickFunction('betrayers')" /></td>
+                                <td><img src="saviorsofkamigawa.png" style="background-color:gray" id="saviors" onclick="pickFunction('saviors')" /></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <table class="table table_bordered table-striped text-center">
+            <tbody>
+                <tr>
+                    <td><img src="ninth.png" style="background-color:gray" id="ninth" onclick="pickFunction('ninth')" /></td>
+                </tr>
+            </tbody>
+        </table>
+        <h4 class="text-center">Ravnica Block</h4>
+        <table class="table table_bordered table-striped text-center">
+            <tbody>
+                <tr>
+                    <td><img src="ravnica.png" style="background-color:gray" id="ravnica" onclick="pickFunction('ravnica')" /></td>
+                    <td><img src="guildpact.png" style="background-color:gray" id="guildpact" onclick="pickFunction('guildpact')" /></td>
+                    <td><img src="dissension.png" style="background-color:gray" id="dissension" onclick="pickFunction('dissension')" /></td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table_bordered table-striped text-center">
+            <tbody>
+                <tr>
+                    <td><img src="tenth.png" style="background-color:gray" id="tenth" onclick="pickFunction('tenth')" /></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <h4 class="text-center">Lorwyn Block</h4>
+                    <table class="table table_bordered table-striped text-center">
+                        <tbody>
+                            <tr>
+                                <td><img src="lorwyn.png" style="background-color:gray" id="lorwyn" onclick="pickFunction('lorwyn')" /></td>
+                                <td><img src="morningtide.png" style="background-color:gray" id="morningtide" onclick="pickFunction('morningtide')" /></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col">
+                    <h4 class="text-center">Shadowmoor Block</h4>
+                    <table class="table table_bordered table-striped text-center">
+                        <tbody>
+                            <tr>
+                                <td><img src="shadowmoor.png" style="background-color:gray" id="shadowmoor" onclick="pickFunction('shadowmoor')" /></td>
+                                <td><img src="eventide.png" style="background-color:gray" id="eventide" onclick="pickFunction('eventide')" /></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <h4 class="text-center">Alara Block</h4>
+                    <table class="table table_bordered table-striped text-center">
+                        <tbody>
+                            <tr>
+                                <td><img src="shardsofalara.png" style="background-color:gray" id="shardsofalara" onclick="pickFunction('shardsofalara')" /></td>
+                                <td><img src="conflux.png" style="background-color:gray" id="conflux" onclick="pickFunction('conflux')" /></td>
+                                <td><img src="alarareborn.png" style="background-color:gray" id="alarareborn" onclick="pickFunction('alarareborn')" /></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table_bordered table-striped text-center">
+                        <tbody>
+                            <tr>
+                                <td><img src="m10.png" style="background-color:gray" id="m10" onclick="pickFunction('m10')" /></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col">
+                    <h4 class="text-center">Zendikar Block</h4>
+                    <table class="table table_bordered table-striped text-center">
+                        <tbody>
+                            <tr>
+                                <td><img src="zendikar.png" style="background-color:gray" id="zendikar" onclick="pickFunction('zendikar')" /></td>
+                                <td><img src="worldwake.png" style="background-color:gray" id="worldwake" onclick="pickFunction('worldwake')" /></td>
+                                <td><img src="riseoftheeldrazi.png" style="background-color:gray" id="riseoftheeldrazi" onclick="pickFunction('riseoftheeldrazi')" /></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table_bordered table-striped text-center">
+                        <tbody>
+                            <tr>
+                                <td><img src="m11.png" style="background-color:gray" id="m11" onclick="pickFunction('m11')" /></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <h4 class="text-center">Scars of Mirrodin Block</h4>
+                    <table class="table table_bordered table-striped text-center">
+                        <tbody>
+                            <tr>
+                                <td><img src="scarsofmirrodin.png" style="background-color:gray" id="scarsofmirrodin" onclick="pickFunction('scarsofmirrodin')" /></td>
+                                <td><img src="mirrodinbesieged.png" style="background-color:gray" id="mirrodinbesieged" onclick="pickFunction('mirrodinbesieged')" /></td>
+                                <td><img src="newphyrexia.png" style="background-color:gray" id="newphyrexia" onclick="pickFunction('newphyrexia')" /></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table_bordered table-striped text-center">
+                        <tbody>
+                            <tr>
+                                <td><img src="m12.png" style="background-color:gray" id="m12" onclick="pickFunction('m12')" /></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col">
+                    <h4 class="text-center">Innistrad Block</h4>
+                    <table class="table table_bordered table-striped text-center">
+                        <tbody>
+                            <tr>
+                                <td><img src="innistrad.png" style="background-color:gray" id="innistrad" onclick="pickFunction('innistrad')" /></td>
+                                <td><img src="darkascension.png" style="background-color:gray" id="darkascension" onclick="pickFunction('darkascension')" /></td>
+                                <td><img src="avacynrestored.png" style="background-color:gray" id="avacynrestored" onclick="pickFunction('avacynrestored')" /></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table_bordered table-striped text-center">
+                        <tbody>
+                            <tr>
+                                <td><img src="m13.png" style="background-color:gray" id="m13" onclick="pickFunction('m13')" /></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <h4 class="text-center">Return to Ravnica Block</h4>
+                    <table class="table table_bordered table-striped text-center">
+                        <tbody>
+                            <tr>
+                                <td><img src="returntoravnica.png" style="background-color:gray" id="rtr" onclick="pickFunction('rtr')" /></td>
+                                <td><img src="gatecrash.png" style="background-color:gray" id="gatecrash" onclick="pickFunction('gatecrash')" /></td>
+                                <td><img src="dragonsmaze.png" style="background-color:gray" id="dragonsmaze" onclick="pickFunction('dragonsmaze')" /></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table_bordered table-striped text-center">
+                        <tbody>
+                            <tr>
+                                <td><img src="m14.png" style="background-color:gray" id="m14" onclick="pickFunction('m14')" /></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col">
+                    <h4 class="text-center">Theros Block</h4>
+                    <table class="table table_bordered table-striped text-center">
+                        <tbody>
+                            <tr>
+                                <td><img src="theros.png" style="background-color:gray" id="theros" onclick="pickFunction('theros')" /></td>
+                                <td><img src="bornofthegods.png" style="background-color:gray" id="bornofthegods" onclick="pickFunction('bornofthegods')" /></td>
+                                <td><img src="journeyintonyx.png" style="background-color:gray" id="journeyintonyx" onclick="pickFunction('journeyintonyx')" /></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table_bordered table-striped text-center">
+                        <tbody>
+                            <tr>
+                                <td><img src="m15.png" style="background-color:gray" id="m15" onclick="pickFunction('m15')" /></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <h4 class="text-center">Tarkir Block</h4>
+        <table class="table table_bordered table-striped text-center">
+            <tbody>
+                <tr>
+                    <td><img src="khansoftarkir.png" style="background-color:gray" id="khansoftarkir" onclick="pickFunction('khansoftarkir')" /></td>
+                    <td><img src="fatereforged.png" style="background-color:gray" id="fatereforged" onclick="pickFunction('fatereforged')" /></td>
+                    <td><img src="dragonsoftarkir.png" style="background-color:gray" id="dragonsoftarkir" onclick="pickFunction('dragonsoftarkir')" /></td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table_bordered table-striped text-center">
+            <tbody>
+                <tr>
+                    <td><img src="magicorigins.png" style="background-color:gray" id="origins" onclick="pickFunction('origins')" /></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <h4 class="text-center">Battle for Zendikar Block</h4>
+                    <table class="table table_bordered table-striped text-center">
+                        <tbody>
+                            <tr>
+                                <td><img src="battleforzendikar.png" style="background-color:gray" id="battleforzendikar" onclick="pickFunction('battleforzendikar')" /></td>
+                                <td><img src="oathofthegatewatch.png" style="background-color:gray" id="gatewatch" onclick="pickFunction('gatewatch')" /></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col">
+                    <h4 class="text-center">Shadows over Innistrad Block</h4>
+                    <table class="table table_bordered table-striped text-center">
+                        <tbody>
+                            <tr>
+                                <td><img src="shadowsoverinnistrad.png" style="background-color:gray" id="shadows" onclick="pickFunction('shadows')" /></td>
+                                <td><img src="eldritchmoon.png" style="background-color:gray" id="eldritchmoon" onclick="pickFunction('eldritchmoon')" /></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <h4 class="text-center">Kaladesh Block</h4>
+                    <table class="table table_bordered table-striped text-center">
+                        <tbody>
+                            <tr>
+                                <td><img src="kaladesh.png" style="background-color:gray" id="kaladesh" onclick="pickFunction('kaladesh')" /></td>
+                                <td><img src="aetherrevolt.png" style="background-color:gray" id="aetherrevolt" onclick="pickFunction('aetherrevolt')" /></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col">
+                    <h4 class="text-center">Amonkhet Block</h4>
+                    <table class="table table_bordered table-striped text-center">
+                        <tbody>
+                            <tr>
+                                <td><img src="amonkhet.png" style="background-color:gray" id="amonkhet" onclick="pickFunction('amonkhet')" /></td>
+                                <td><img src="hourofdevastation.png" style="background-color:gray" id="hourofdevastation" onclick="pickFunction('hourofdevastation')" /></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col">
+                    <h4 class="text-center">Ixalan Block</h4>
+                    <table class="table table_bordered table-striped text-center">
+                        <tbody>
+                            <tr>
+                                <td><img src="ixalan.png" style="background-color:gray" id="ixalan" onclick="pickFunction('ixalan')" /></td>
+                                <td><img src="rivalsofixalan.png" style="background-color:gray" id="rivalsofixalan" onclick="pickFunction('rivalsofixalan')" /></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <table class="table table_bordered table-striped text-center">
+            <tbody>
+                <tr>
+                    <td><img src="dominaria.png" style="background-color:gray" id="dominaria" onclick="pickFunction('dominaria')" /></td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table_bordered table-striped text-center">
+            <tbody>
+                <tr>
+                    <td><img src="m19.png" style="background-color:gray" id="m19" onclick="pickFunction('m19')" /></td>
+                </tr>
+            </tbody>
+        </table>
+        <h4 class="text-center">Return to Return to Ravnica Block</h4>
+        <table class="table table_bordered table-striped text-center">
+            <tbody>
+                <tr>
+                    <td><img src="guildsofravnica.png" style="background-color:gray" id="guildsofravnica" onclick="pickFunction('guildsofravnica')" /></td>
+                    <td><img src="ravnicaallegiance.png" style="background-color:gray" id="ravnicaallegiance" onclick="pickFunction('ravnicaallegiance')" /></td>
+                    <td><img src="warofthespark.png" style="background-color:gray" id="warofthespark" onclick="pickFunction('warofthespark')" /></td>
+                    <td><img src="m20.png" style="background-color:gray" id="m20" onclick="pickFunction('m20')" /></td>
+                    <td><img src="throneofeldraine.png" style="background-color:gray" id="eldraine" onclick="pickFunction('eldraine')" /></td>
+                    <td><img src="therosbeyonddeath.png" style="background-color:gray" id="therosbeyonddeath" onclick="pickFunction('therosbeyonddeath')" /></td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table_bordered table-striped text-center">
+            <tbody>
+                <tr>
+                    <td><img src="ikoria.png" style="background-color:gray" id="ikoria" onclick="pickFunction('ikoria')" /></td>
+                    <td><img src="m21.png" style="background-color:gray" id="m21" onclick="pickFunction('m21')" /></td>
+                    <td><img src="zendikarrising.png" style="background-color:gray" id="zendikarrising" onclick="pickFunction('zendikarrising')" /></td>
+                    <td><img src="kaldheim.png" style="background-color:gray" id="kaldheim" onclick="pickFunction('kaldheim')" /></td>
+                    <td><img src="strixhaven.png" style="background-color:gray" id="strixhaven" onclick="pickFunction('strixhaven')" /></td>
+                    <td><img src="afr.png" style="background-color:gray" id="afr" onclick="pickFunction('afr')" /></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+
+            </div>
+            <div class="col">
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+
+
+
+
+            </div>
+            <div class="col-sm-2">
+                <h3 id="player1name">Player 1</h3>
+                <h8 id="player1count">0</h8>
+                <p id="player1list"></p>
+                <p></p>
+            </div>
+            <div class="col-sm-2">
+                <h3 id="player2name">Player 2</h3>
+                <h8 id="player2count">0</h8>
+                <p id="player2list"></p>
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        function pickFunction(id) {
+            var setid = document.getElementById(id);
+            var temp = document.getElementById('player1count').innerHTML;
+            var player1count = parseInt(temp);
+            var temp = document.getElementById('player2count').innerHTML;
+            var player2count = parseInt(temp);
+            if (setid.style.backgroundColor == "gray") {
+                setid.style.backgroundColor = "lightgreen"
+                player1count = player1count + 1;
+            }
+            else if (setid.style.backgroundColor == "lightgreen") {
+                setid.style.backgroundColor = "lightsalmon"
+                player1count = player1count - 1;
+                player2count = player2count + 1;
+            }
+            else if (setid.style.backgroundColor == "lightsalmon") {
+                setid.style.backgroundColor = "gray"
+                player2count = player2count - 1;
+            }
+            document.getElementById('player1count').innerHTML = player1count;
+            document.getElementById('player2count').innerHTML = player2count;
+        }
+        function setNames(id) {
+            var temp = document.getElementById("nameinput");
+            if (id.id == "player1") {
+                document.getElementById("player1").innerHTML = temp.innerHTML;
+            }
+        }
+    </script>
+
+</body>
+</html>
